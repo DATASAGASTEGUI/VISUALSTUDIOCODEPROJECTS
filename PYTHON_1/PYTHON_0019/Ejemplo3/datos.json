@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Juan P\u00e9rez",
+        "edad": 30,
+        "puesto": "Desarrollador"
+    },
+    {
+        "nombre": "Mar\u00eda G\u00f3mez",
+        "edad": 35,
+        "puesto": "Dise\u00f1adora"
+    },
+    {
+        "nombre": "Ana L\u00f3pez",
+        "edad": 28,
+        "puesto": "Analista"
+    },
+    {
+        "nombre": "Carlos Garc\u00eda",
+        "edad": 32,
+        "puesto": "Gerente"
+    }
+]

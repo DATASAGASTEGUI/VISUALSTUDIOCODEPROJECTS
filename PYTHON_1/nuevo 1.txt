@@ -1,0 +1,104 @@
+-------------------------------------------------------------------------------
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping("/")
+public class SumarController {
+
+    @GetMapping("sumar") // http://localhost:8090/sumar
+    public String mostrarFormulario() {
+        return "sumar";
+    }
+
+    @PostMapping("/sumar") // http://localhost:8090/sumar
+    public String sumarNumeros(@RequestParam("num1") int num1, @RequestParam("num2") int num2, Model model) {
+        int resultado = num1 + num2;
+        model.addAttribute("resultado", resultado);
+        return "sumar";
+    }
+}
+-------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Sumar números con Thymeleaf</h1>
+        <form th:action="@{/sumar}" method="post">
+            <div>
+                <label for="num1">Primer número:</label>
+                <input type="text" id="num1" th:field="${num1}" />
+            </div>
+            <div>
+                <label for="num2">Segundo número:</label>
+                <input type="text" id="num2" th:field="${num2}" />
+            </div>
+            <div>
+                <input type="submit" value="Sumar" />
+            </div>
+        </form>
+
+        <div th:if="${resultado}">
+            <h2>Resultado de la suma:</h2>
+            <p th:text="${resultado}" />
+        </div>
+    </body>
+</html>
+
+-------------------------------------------------------------------------------
+		<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SUMAR</title>
+</head>
+<body>
+    <h1>SUMAR DOS NUMEROS</h1>
+    <form action="#" th:action="@{/sumar02}" th:object="${sumForm}" method="post">
+        <label for="num1">Número 1:</label>
+        <input type="text" id="num1" name="num1" th:field="*{num1}" th:oninput="calculateSum()" required="" /><br><br>
+        <label for="num2">Número 2:</label>
+        <input type="text" id="num2" name="num2" th:field="*{num2}" th:oninput="calculateSum()"  required="" /><br><br>
+        <label for="result">Resultado:</label>
+        <input type="text" id="resultado" name="resultado" th:value="${resultado}" readonly><br><br>
+
+    </form>
+    
+    <script>
+        function calculateSum() {
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var resultado = num1 + num2;
+            document.getElementById("resultado").value = resultado;
+        }
+    </script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

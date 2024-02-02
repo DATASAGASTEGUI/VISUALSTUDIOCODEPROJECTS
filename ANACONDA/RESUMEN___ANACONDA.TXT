@@ -1,0 +1,117 @@
+*****************
+***   INDEX   ***
+*****************
+
+
+
+****************
+***   0001   ***
+****************
+
+* Cuando instalemos Anaconda decir solo para mi no para todos los usuarios porque tendremos problemas con las bibliotecas luego.
+* Ruta donde se instala anaconda: C:\Users\RYZEN\anaconda3
+* Cuando se busca anaconda en el buscador de windows aparece dos: Anaconda Navigator y Anaconda Prompt escoger la segunda.
+* Anaconda Prompt escribimos ipython nos permite programa en linea de comandos pero nadie programa de esta manera, se usa solo para probar comandos.
+* En realidad hay que ir Anaconda Navigator y lo que nos interesa de aca es JupyterLab y Notebook
+* Trabajar con Panda es trabajar con ciencia de datos.
+* Me registre con Google datasagamadrid@gmail.com y recibi un código de verificación
+  en mi correo. https://anaconda.cloud/
+* Matplotlib. Es una librería para generar gráficas a partir de datos contenidos en listas, vectores, en el lenguaje de programación python y en su extensión matemática NumPy
+* Seaborn. Es una librería de visualización de datos para Python desarrollada sobre matplotlib. Ofrece una interfaz de alto nivel para la creación de atractivas gráficas.
+* Numpy. Es una librería Python especializada en el cálculo numérico y el análisis de datos, especialmente para un gran volumen de datos.
+
+
+Celdas
+Ctrl + Enter ---> Ejecutar código
+Alt + Enter ---> Ejecutar código y luego insertar celda
+
+
+import panda as pd
+df_train = pd.read_csv('train.csv')
+df_train.head(20) # Muestrame sólo 20 columnas
+df_train.shape # Retorna la dimensión de mi tabla por ejemplo (1460,81) 1461 filas y 81 columnas
+df_train['Id'] # Muestrame sólo la columna Id la columna debe estar escrita igual que en la tabla.
+df_train[['Id','SalePrice']] # Le estoy pasando una lista con las dos columnas que quiero que se muestren.
+df_train['SalePrice'].mean() # Retorna la venta promedio.
+df_train.describe() # Retorna estadistica de todo.
+
+
+IMPORTAR TODAS LAS LIBRERIAS QUE VAYAMOS A UTILIZAR
+
+import panda as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+from scipy.stats import norm
+from sklearn.preprocessing import standarScaler
+from scipy import stats
+import warnings
+
+%matplotlib inline # Ver las gráficas cuando yo las pido.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+****************
+***   0002   ***
+****************
+
+
+
+
+
+****************
+***   0003   ***
+****************
+
+
+****************
+***   0004   ***
+****************
+
+
+****************
+***   0005   ***
+****************
+
+
+****************
+***   0006   ***
+****************
+
+
+
+****************
+***   0007   ***
+****************
+
+
+
+****************
+***   0008   ***
+****************
+
+
+
+****************
+***   0009   ***
+****************
+
+
+
+****************
+***   0010   ***
+****************
+
+
+

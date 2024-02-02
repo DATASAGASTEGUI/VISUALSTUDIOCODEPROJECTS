@@ -1,0 +1,25 @@
+[
+    {
+        "id_cliente": "C1",
+        "nombre": "Sergio",
+        "apellidos": "Rojas Espino",
+        "edad": 42,
+        "importe": 2.55
+    },
+    {
+        "id_cliente": "C2",
+        "nombre": "Pedro",
+        "apellidos": [
+            "Perez Lopez"
+        ],
+        "edad": 25,
+        "importe": 8.35
+    },
+    {
+        "id_cliente": "C3",
+        "nombre": "Guadalupe",
+        "apellidos": "Rodriguez Martinez",
+        "edad": 32,
+        "importe": 12.44
+    }
+]

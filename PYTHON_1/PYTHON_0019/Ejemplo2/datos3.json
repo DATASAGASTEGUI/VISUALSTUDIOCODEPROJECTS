@@ -1,0 +1,37 @@
+{
+    "empresa": "Acme Inc.",
+    "empleados": [
+        {
+            "id": 1,
+            "nombre": "Juan P\u00e9rez",
+            "edad": 30,
+            "puesto": "Desarrollador",
+            "proyectos": [
+                {
+                    "nombre": "Proyecto A",
+                    "cliente": "Empresa X"
+                },
+                {
+                    "nombre": "Proyecto B",
+                    "cliente": "Empresa Y"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Mar\u00eda G\u00f3mez",
+            "edad": 35,
+            "puesto": "Dise\u00f1adora",
+            "proyectos": [
+                {
+                    "nombre": "Proyecto C",
+                    "cliente": "Empresa Z"
+                },
+                {
+                    "nombre": "Proyecto D",
+                    "cliente": "Empresa W"
+                }
+            ]
+        }
+    ]
+}

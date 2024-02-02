@@ -1,0 +1,36 @@
+{
+  "empleados": [
+    {
+      "id": 1,
+      "nombre": "Juan Pérez",
+      "edad": 30,
+      "puesto": "Desarrollador",
+      "proyectos": [
+        {
+          "nombre": "Proyecto A",
+          "cliente": "Empresa X"
+        },
+        {
+          "nombre": "Proyecto B",
+          "cliente": "Empresa Y"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "María Gómez",
+      "edad": 35,
+      "puesto": "Diseñadora",
+      "proyectos": [
+        {
+          "nombre": "Proyecto C",
+          "cliente": "Empresa Z"
+        },
+        {
+          "nombre": "Proyecto D",
+          "cliente": "Empresa W"
+        }
+      ]
+    }
+  ]
+}
